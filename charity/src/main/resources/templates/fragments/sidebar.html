@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <div id="sidebar" class='active' th:fragment="sidebar"><!--sidebar-->
+        <div class="sidebar-wrapper active">
+            <div class="sidebar-header">
+                <img src="assets/images/logo.svg" alt="" srcset="">
+            </div>
+            <div class="sidebar-menu">
+                <ul class="menu">
+                    <li class='sidebar-title'>Main Menu</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/}" class='sidebar-link'>
+                            <i data-feather="home" width="20"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class='sidebar-title'>QUẢN LÝ DỰ ÁN TỪ THIỆN</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/pcategories}" class='sidebar-link'>
+                            <i data-feather="briefcase" width="20"></i>
+                            <span>Danh Mục</span>
+                        </a>
+                        <a th:href="@{/projects}" class='sidebar-link'>
+                            <i data-feather="briefcase" width="20"></i>
+                            <span>Dự Án</span>
+                        </a>
+                    </li>
+
+                    <li class='sidebar-title'>QUẢN LÝ TIN TỨC TỪ THIỆN</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/ncategories}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Danh Mục</span>
+                        </a>
+                        <a th:href="@{/news}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Tin Tức</span>
+                        </a>
+                    </li>
+
+                    <li class='sidebar-title'>QUẢN LÝ NGƯỜI DÙNG</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/users}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Tài Khoản</span>
+                        </a>
+                    </li>
+
+                    <li class='sidebar-title'>QUẢN LÝ TÌNH NGUYỆN</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/volunteers}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Tình Nguyện Viên</span>
+                        </a>
+                        <a th:href="@{/skills}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Kỹ Năng</span>
+                        </a>
+                    </li>
+
+                    <li class='sidebar-title'>QUẢN LÝ MẠNG XÃ HỘI</li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/reports}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Báo Cáo</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a th:href="@{/export}" class='sidebar-link'>
+                            <i data-feather="file-text" width="20"></i>
+                            <span>Sao Kê</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
